@@ -9,7 +9,7 @@ class TodoModel{
   @HiveField(1)
   String? details;
   @HiveField(2)
-  bool? isCompleted;
+  bool isCompleted;
 
-  TodoModel({this.title, this.details, this.isCompleted});
+  TodoModel({this.title, this.details, required this.isCompleted});
 }

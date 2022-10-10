@@ -19,7 +19,7 @@ class TodoModelAdapter extends TypeAdapter<TodoModel> {
     return TodoModel(
       title: fields[0] as String?,
       details: fields[1] as String?,
-      isCompleted: fields[2] as bool?,
+      isCompleted: fields[2] as bool,
     );
   }
 

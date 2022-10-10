@@ -11,7 +11,7 @@ void main() async{
   final document = await getApplicationDocumentsDirectory();
   Hive.init(document.path);
   Hive.registerAdapter(TodoModelAdapter());
-  Hive.openBox<TodoModel>(todoBoxName);
+  await Hive.openBox<TodoModel>(todoBoxName);
   runApp(const MyApp());
 }
 
